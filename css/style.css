@@ -33,6 +33,31 @@ body {
   background-color: #f5f6fa;
 }
 
+img.anim {
+  animation: float 1s ease-in-out infinite;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
 
 /* https://codepen.io/dariocorsi/pen/xpLgrL */
 
@@ -80,7 +105,6 @@ body {
   appearance: none;
   box-sizing: border-box;
   font-size: calc(var(--button-height) / 3);
-  font-family: 'Open Sans', sans-serif;
   background: var(--color-bg);
   height: var(--button-height);
   min-width: var(--button-height);
@@ -136,7 +160,6 @@ body {
     inset .5rem .5rem .5rem var(--color-bg-light);
 }
 
-
 body {
   background: #2d3436;
   display: flex;
@@ -158,8 +181,7 @@ body {
 
 .presentation-title {
   color: rgba(0, 0, 0, .2);
-  text-shadow: 1px 1px rgba(255, 255, 255, .15);
-  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px #f5f6fa;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 1rem;

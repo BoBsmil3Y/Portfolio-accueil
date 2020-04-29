@@ -16,11 +16,23 @@
 
 
   <div class="presentation-content">
-    <h2 class="white-text">CHOOSE YOUR PORTFOLIO</h2>
+    <h2 class="presentation-title">CHOOSE YOUR PORTFOLIO</h2>
 
     <div class="">
-      <button class="retro-button">UIkit</button>
-      <button class="retro-button">Bulma</button>
+      <div>
+        <button class="retro-button" onmouseover="displayImg('uikit')" onmouseout="hideImg('uikit')">UIkit</button>
+        <button class="retro-button" onmouseover="displayImg('bulma')" onmouseout="hideImg('bulma')">Bulma</button>
+      </div>
+
+      <div>
+        <div class="" style="padding-right: 210px; margin-top: 20px">
+          <img id="uikit" class="anim hidden" src="img/hand.png" width="75px" height="75px">
+        </div>
+        <div class="hidden" style="padding-left: 225px; margin-top: -55px">
+          <img id="bulma" class="anim hidden" src="img/hand.png" width="75px" height="75px">
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -34,11 +46,11 @@
 
 
 
-
-
   <!-- UIkit JS -->
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
